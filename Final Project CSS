@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeHeaven Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">John'sCakeHeaven Bakery</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img src="https://th.bing.com/th/id/OIP.qBT0t2YNHqY6bLRi6RKH7wHaHa?pid=ImgDet&rs=1" alt="A selection of delicious pastries">
+        <p>Welcome to JohnCakeHeaven, where all your bakery dreams come true!</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 CakeHeaven Bakery.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7eee5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #e89f71;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f7eee5;
+}
+
+.brand-title {
+    font-size: 24px;
+    color: #fff;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.intro img {
+    width: 80%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e89f71;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
